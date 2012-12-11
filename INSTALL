@@ -1,0 +1,70 @@
+INSTALL
+=======
+
+Overview
+--------
+If you simply want to install the MSP430 BSL Utility, follow the "Install"
+instructions below.  If you want to actually build the installer from source,
+follow the "Build" instructions.
+
+Install
+-------
+Windows
+~~~~~~~
+There is a binary installer for Windows available on the Flying Camp Design
+website (http://www.flyingcampdesign.com/msp430-bsl-utility.html)
+It is the recommended way to install the MSP430 BSL Utility for Windows.
+
+Linux
+~~~~~
+Coming soon...
+
+Mac OSX
+~~~~~~~
+Coming soon...
+
+Build
+-----
+Windows Installer
+~~~~~~~~~~~~~~~~~
+The binary installer for Windows available on the Flying Camp Design website
+was built on Windows XP 32-bit following the instructions below.  Other versions
+of the requirements listed below may work, but have not been tested.
+
+.Requirements
+- Python 2.7.3 (python-2.7.3.msi)
+- distribute 0.6.32 (distribute-0.6.32.tar.gz)
+- pip 1.2.1 (installed via `easy_install pip`)
+- py2exe 0.6.9 (py2exe-0.6.9.win32-py2.7.exe)
+- pyserial 2.6 (installed via `pip install pyserial`)
+- NSIS 2.46 (http://nsis.sourceforge.net)
+- asciidoc 8.6.8 (unzipped to C:\asciidoc-8.6.8)
+
+.Add the following to the System PATH
+- C:\Python27
+- C:\Python27\Scripts
+- C:\Program Files\NSIS (so that makensis is in PATH)
+- C:\asciidoc-8.6.8 (so that asciidoc.py is in PATH)
+
+.Build the installer
+----
+make installer
+----
+
+.Build only the docs
+----
+make doc
+----
+
+.Remove generated files
+----
+make clean
+----
+
+Linux Installer
+~~~~~~~~~~~~~~~
+Coming soon...
+
+Mac OSX Installer
+~~~~~~~~~~~~~~~~~
+Coming soon...

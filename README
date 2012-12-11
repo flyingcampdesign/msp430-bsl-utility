@@ -1,0 +1,15 @@
+README
+======
+
+http://www.flyingcampdesign.com
+
+About
+-----
+The MSP430 BSL Utility is a simple GUI front end for the mspgcc python package.  
+
+Files
+-----
+- For install instructions see INSTALL
+- For license information see LICENSE
+- For changes between releases see CHANGES
+- For issues with the current release see RELEASE_NOTES

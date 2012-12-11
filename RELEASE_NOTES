@@ -1,0 +1,16 @@
+RELEASE NOTES
+=============
+
+KNOWN ISSUES
+------------
+
+- The default install of python/Tk/Tcl on OSX Snow Leopard has some bugs
+  which cause severe errors when trying to run this application.  The
+  progress bar does not update and trying to quit using cmd+q causes a
+  segfault.  Upgrading to python >= 2.6.4 and Tcl/Tk >= 8.5 fixes these
+  issues.  
+- The 'Toggle TEST on TX' option is currently disabled because it relies 
+  on serial.win32file (in bsl.py) provided by pySerial releases OLDER than 2.5.
+  pySerial releases 2.5 and later on windows no longer rely on pywin32
+  and therefore do not provide serial.win32file.  This feature will remain
+  disabled until the dependency on serial.win32file is removed from bsl.py.

@@ -1,0 +1,11 @@
+*~
+.DS_Store
+*.pyc
+*.html
+MANIFEST
+PKG-INFO
+setup.cfg
+*.egg-info/
+/build/
+/dist/
+/nsis/
